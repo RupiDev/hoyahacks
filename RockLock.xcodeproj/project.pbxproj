@@ -12,6 +12,14 @@
 		D2C99A2A1C5D3B950051440E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C99A281C5D3B950051440E /* Main.storyboard */; };
 		D2C99A2C1C5D3B960051440E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C99A2B1C5D3B960051440E /* Assets.xcassets */; };
 		D2C99A2F1C5D3B960051440E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C99A2D1C5D3B960051440E /* LaunchScreen.storyboard */; };
+		D2C99A371C5D4F8C0051440E /* ScannerCodeOwnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C99A361C5D4F8C0051440E /* ScannerCodeOwnerViewController.swift */; };
+		D2C99A3A1C5D699D0051440E /* OwnerRegisterIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C99A391C5D699D0051440E /* OwnerRegisterIDViewController.swift */; };
+		D2C99A3C1C5D74580051440E /* HousesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C99A3B1C5D74580051440E /* HousesViewController.swift */; };
+		D2C99A3E1C5D934E0051440E /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C99A3D1C5D934E0051440E /* UserCell.swift */; };
+		D2C99A401C5DB3690051440E /* UnlockDoorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C99A3F1C5DB3690051440E /* UnlockDoorController.swift */; };
+		D2C99A421C5DBCD70051440E /* PhotoID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C99A411C5DBCD70051440E /* PhotoID.swift */; };
+		D2C99A441C5DC3210051440E /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C99A431C5DC3210051440E /* UsersViewController.swift */; };
+		D2C99A461C5DC55D0051440E /* HousesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C99A451C5DC55D0051440E /* HousesViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		D2C99A2B1C5D3B960051440E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2C99A2E1C5D3B960051440E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D2C99A301C5D3B960051440E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C99A361C5D4F8C0051440E /* ScannerCodeOwnerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerCodeOwnerViewController.swift; sourceTree = "<group>"; };
+		D2C99A391C5D699D0051440E /* OwnerRegisterIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnerRegisterIDViewController.swift; sourceTree = "<group>"; };
+		D2C99A3B1C5D74580051440E /* HousesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewController.swift; sourceTree = "<group>"; };
+		D2C99A3D1C5D934E0051440E /* UserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		D2C99A3F1C5DB3690051440E /* UnlockDoorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnlockDoorController.swift; sourceTree = "<group>"; };
+		D2C99A411C5DBCD70051440E /* PhotoID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoID.swift; sourceTree = "<group>"; };
+		D2C99A431C5DC3210051440E /* UsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		D2C99A451C5DC55D0051440E /* HousesViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +70,30 @@
 		D2C99A231C5D3B950051440E /* RockLock */ = {
 			isa = PBXGroup;
 			children = (
+				D2C99A381C5D4F990051440E /* Views */,
 				D2C99A241C5D3B950051440E /* AppDelegate.swift */,
-				D2C99A261C5D3B950051440E /* ViewController.swift */,
 				D2C99A281C5D3B950051440E /* Main.storyboard */,
 				D2C99A2B1C5D3B960051440E /* Assets.xcassets */,
 				D2C99A2D1C5D3B960051440E /* LaunchScreen.storyboard */,
 				D2C99A301C5D3B960051440E /* Info.plist */,
 			);
 			path = RockLock;
+			sourceTree = "<group>";
+		};
+		D2C99A381C5D4F990051440E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2C99A361C5D4F8C0051440E /* ScannerCodeOwnerViewController.swift */,
+				D2C99A391C5D699D0051440E /* OwnerRegisterIDViewController.swift */,
+				D2C99A261C5D3B950051440E /* ViewController.swift */,
+				D2C99A3B1C5D74580051440E /* HousesViewController.swift */,
+				D2C99A3D1C5D934E0051440E /* UserCell.swift */,
+				D2C99A411C5DBCD70051440E /* PhotoID.swift */,
+				D2C99A3F1C5DB3690051440E /* UnlockDoorController.swift */,
+				D2C99A451C5DC55D0051440E /* HousesViewCell.swift */,
+				D2C99A431C5DC3210051440E /* UsersViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2C99A3C1C5D74580051440E /* HousesViewController.swift in Sources */,
 				D2C99A271C5D3B950051440E /* ViewController.swift in Sources */,
+				D2C99A3E1C5D934E0051440E /* UserCell.swift in Sources */,
+				D2C99A371C5D4F8C0051440E /* ScannerCodeOwnerViewController.swift in Sources */,
+				D2C99A3A1C5D699D0051440E /* OwnerRegisterIDViewController.swift in Sources */,
+				D2C99A461C5DC55D0051440E /* HousesViewCell.swift in Sources */,
+				D2C99A401C5DB3690051440E /* UnlockDoorController.swift in Sources */,
 				D2C99A251C5D3B950051440E /* AppDelegate.swift in Sources */,
+				D2C99A441C5DC3210051440E /* UsersViewController.swift in Sources */,
+				D2C99A421C5DBCD70051440E /* PhotoID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +291,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RockLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RupinBhalla.RockLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,6 +303,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RockLock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.RupinBhalla.RockLock;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,6 +329,7 @@
 				D2C99A351C5D3B960051440E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
