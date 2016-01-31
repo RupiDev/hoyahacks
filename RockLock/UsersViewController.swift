@@ -21,8 +21,11 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         
         let defaults = NSUserDefaults.standardUserDefaults();
-        let arduinoId: String  =  defaults.objectForKey("permanentArduinoId") as! String
-        let phoneId: String = defaults.objectForKey("permanentPhoneId") as! String
+        
+        //let blo: String = UIDevice.currentDevice().identifierForVendor!.UUIDString
+        
+        //let arduinoId: String  =  defaults.objectForKey("permanentArduinoId") as! String
+        let phoneId: String = UIDevice.currentDevice().identifierForVendor!.UUIDString
         
         let url = NSURL(string:"http://1f68bb46.ngrok.io/houses/\(phoneId)")
         
@@ -87,14 +90,30 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
             
         }
         
+        
+        cell.selected = true;
+        
         if(cell.selected)
         {
-            let defaults = NSUserDefaults.standardUserDefaults();
+            //let defaults = NSUserDefaults.standardUserDefaults();
             //let aUI: String = defaults.objectForKey("permanentArduinoId") as! String
             
             let aUI = allHouses[indexPath.row];
             
-            let phoneId: String = defaults.objectForKey("permanentPhoneId") as! String
+            
+            
+            //let cell = sender as! UITableViewCell;
+            //let indexPath = tableView.indexPathForCell(cell);
+            
+            //let aUI = allHouses[indexPath!.row];
+
+            
+            
+            
+            
+            //let phoneId: String = defaults.objectForKey("permanentPhoneId") as! String
+            
+            let phoneId: String = UIDevice.currentDevice().identifierForVendor!.UUIDString
             
             let url = NSURL(string:"http://1f68bb46.ngrok.io/unlock/\(aUI)/\(phoneId)")
             
@@ -111,6 +130,10 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
                 
                 
             }
+            
+            print("Hello");
+            
+            
 
         }
         return cell;
@@ -121,11 +144,35 @@ class UsersViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     
     
+    
+    
     @IBAction func UnlockAction(sender: AnyObject)
     {
+        
+        //if(tableView.cellForRowAtIndexPath(
+        
+        //let indexPath = tableView.indexPathForCell(cell)
+        
+        //let cell = sender as! UITableViewCell;
+        //let indexPath = tableView.indexPathForCell(cell);
+        
+        //let aUI = allHouses[indexPath!.row];
+        
+        
+        
+        
+        
+        
         let defaults = NSUserDefaults.standardUserDefaults();
-        let aUI: String = defaults.objectForKey("permanentArduinoId") as! String
-        let phoneId: String = defaults.objectForKey("permanentPhoneId") as! String
+        
+        
+        //let aUI: String = defaults.objectForKey("permanentArduinoId") as! String
+        let aUI: String = "19284819";
+        
+        
+        //let phoneId: String = defaults.objectForKey("permanentPhoneId") as! String
+        let phoneId: String = UIDevice.currentDevice().identifierForVendor!.UUIDString
+
         
         let url = NSURL(string:"http://1f68bb46.ngrok.io/unlock/\(aUI)/\(phoneId)")
         
